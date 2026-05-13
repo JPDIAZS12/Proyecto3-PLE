@@ -1,0 +1,3 @@
+defmodule Set
+defrule (union p q) -> (union q p) end
+end

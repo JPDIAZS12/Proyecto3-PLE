@@ -1,0 +1,10 @@
+defmodule MiModulo
+  defspace Naturales < Enteros end
+  defspace Enteros end
+
+  defoperator suma : Naturales -> Naturales
+    [comm, assoc]
+  end
+
+  defrule (suma x y) -> (suma y x) end
+end

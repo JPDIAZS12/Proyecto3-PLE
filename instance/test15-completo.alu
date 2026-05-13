@@ -1,0 +1,13 @@
+defmodule Set
+using List
+
+defspace Set < SuperSet end
+
+defoperator union : Set -> Set -> Set end
+
+defvar p : Bool q : Bool end
+
+defrule (union p q) -> (union q p) end
+
+defexpression p and q end
+end

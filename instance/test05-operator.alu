@@ -1,0 +1,3 @@
+defmodule Set
+defoperator union : Set -> Set -> Set end
+end
