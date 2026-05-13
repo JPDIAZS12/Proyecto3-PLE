@@ -2,9 +2,16 @@ defmodule MiModulo
   defspace Naturales < Enteros end
   defspace Enteros end
 
-  defoperator suma : Naturales -> Naturales
-    [comm, assoc]
-  end
+  defoperator suma : Integer -> Boolean end
+
+  defvar x : Integer y : Boolean end
 
   defrule (suma x y) -> (suma y x) end
+
+  defstruct MiLista : List
+    1 : Integer
+    true : Boolean
+    'a' : Char
+    "hola" : String
+  end
 end
