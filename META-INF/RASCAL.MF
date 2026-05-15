@@ -1,5 +1,4 @@
 Manifest-Version: 0.0.1
-Project-Name: dsl-project
+Project-Name: proyecto3
 Source: src/main/rascal
 Require-Libraries: |lib://dsl-project|
-
