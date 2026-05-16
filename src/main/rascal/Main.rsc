@@ -6,6 +6,11 @@ import Syntax;
 import AST;
 import Checker;
 import List;
+// Para correr este programa, abrir el REPL de Rascal y ejecutar:
+// import Main;
+// main(|file:///RUTA/AL/ARCHIVO/ejemplo.vl|);
+// Ejemplo:
+// main(|file:///C:/Users/TuUsuario/ruta/al/proyecto/src/main/rascal/ejemplo.vl|);
 
 public void main(loc file) {
     Tree pt = parse(#start[Program], file);
