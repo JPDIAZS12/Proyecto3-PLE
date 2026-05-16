@@ -7,8 +7,7 @@ import AST;
 import Checker;
 import List;
 
-public void main() {
-    loc file = |project://dsl-project/src/main/rascal/ejemplo.vl|;
+public void main(loc file) {
     Tree pt = parse(#start[Program], file);
     println("[OK] Parse exitoso");
     Program ast = implode(#Program, pt);
