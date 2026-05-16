@@ -5,9 +5,10 @@ import ParseTree;
 import Syntax;
 import AST;
 import Checker;
+import List;
 
 public void main() {
-    loc file = |project://proyecto3/src/main/rascal/ejemplo.vl|;
+    loc file = |project://dsl-project/src/main/rascal/ejemplo.vl|;
     Tree pt = parse(#start[Program], file);
     println("[OK] Parse exitoso");
     Program ast = implode(#Program, pt);
@@ -17,7 +18,7 @@ public void main() {
 
     println("\n=== Verificando tipos ===");
     TModel tm = veriLangTModel(pt);
-    if (tm.messages == {}) {
+    if (isEmpty(tm.messages)) {
         println("[OK] No se encontraron errores de tipos");
     } else {
         println("[ERRORES] Problemas encontrados:");
